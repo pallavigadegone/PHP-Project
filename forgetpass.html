@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forgot Password</title>
+        <link rel="stylesheet" type="text/css" href="css/hv1.css">
+    </head>
+    <body>
+        <span>
+            <a class="button" href="login.php">Back to Login</a>
+        </span>
+        <div>
+            <span id="forgotPasswordTitle">Verify it's You</span>
+            <form id="forgotPassword" action="resetPassword.html">
+                Display security question?<input type="button" class="button" value="Display" onClick="getSecurityQuestion()">
+                <br>
+                <input type="number" class="form" name="number" class="" placeholder="Answer" maxlength="4" required><br>
+                <span id = "forgotPassResetQuestion"></span><br>
+                <input type="submit" class="button" href="login.php">
+       </div>
+                <script>
+                function getSecurityQuestion(){
+                    question="My Birth year?";
+
+                    document.getElementById("forgotPassResetQuestion").innerHTML=question;     
+                }
+            </script>
+        </form>
+
+    </body>
+</html>
